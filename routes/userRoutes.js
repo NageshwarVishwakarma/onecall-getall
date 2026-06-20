@@ -8,6 +8,7 @@ const {
 
 router.get('/', getUsers);
 
+router.get('/home', getHome);
 router.post('/', createUser);
 
 module.exports = router;

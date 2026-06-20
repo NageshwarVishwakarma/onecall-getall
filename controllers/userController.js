@@ -12,6 +12,14 @@ const getUsers = (req, res) => {
     });
 };
 
+
+const getHome = (req, res) => {
+    res.status(200).json({
+        success: true,
+        data: users
+    });
+};
+
 const createUser = (req, res) => {
 
     const { name } = req.body;
